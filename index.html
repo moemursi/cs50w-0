@@ -1,82 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Webpage</title>
-</head>
-<style>
-    * {
-      box-sizing: border-box;
-    }
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
     
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    /* Style the header */
-    header {
-      background-color: #666;
-      padding: 30px;
-      text-align: center;
-      font-size: 35px;
-      color: white;
-    }
-    
-    /* Create two columns/boxes that floats next to each other */
-    nav {
-      float: left;
-      width: 30%;
-      height: 300px; /* only for demonstration, should be removed */
-      background: #ccc;
-      padding: 20px;
-    }
-    
-    /* Style the list inside the menu */
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    
-    article {
-      float: left;
-      padding: 20px;
-      width: 70%;
-      background-color: #f1f1f1;
-      height: 300px; /* only for demonstration, should be removed */
-    }
-    
-    /* Clear floats after the columns */
-    section:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
-    /* Style the footer */
-    footer {
-      background-color: #777;
-      padding: 10px;
-      text-align: center;
-      color: white;
-    }
-    
-    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-    @media (max-width: 600px) {
-      nav, article {
-        width: 100%;
-        height: auto;
-      }
-    }
-    </style>
     </head>
     <body>
     
 
     <header>
-      <h2>M.E</h2>
+        <h2>My Website</h2>
     </header>
+    
     
     <section>
       <nav>
@@ -89,27 +29,31 @@
         </ul>
       </nav>
       
-      <article>
-        Hi I am M,A pharmacist passionate about software development,
-        looking to sue a post-graduate degree in Machine learning.
-        My dream is to be able to provide better patient care through software development.
+      
+      <article class="art">
+        <h1 id="intro">Intro</h1>
+        <p id="intro-tex">Hi I am M,A pharmacist passionate about software development,
+            looking to sue a post-graduate degree in Machine learning.
+            My dream is to be able to provide better patient care through software development.
+    </p>
+    <p><i style="color: blue;">list example</i></p>
 
-
-        Name:  M.E
-        Age:   3X
-        Field of study:  Pharmacy
-        Country:  Canada
-        Email:   setokiba1981@gmail.com
+        <ul>
+            <li>Name:  M</li>
+            <li>Age:   3X</li>
+            <li>Field of study:  Pharmacy</li>
+            <li>Country:  Canada</li>
+            <li>Email:   email@gmail.com</li>
+        </ul>
+        
+        
 
        </article>
     </section>
-    
-    <footer>
-      <p>Copyright 2019</p>
-    </footer>
-<body>
-    
-
-    
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
